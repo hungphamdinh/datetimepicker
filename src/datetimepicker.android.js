@@ -35,6 +35,8 @@ function getPicker({
   minimumDate,
   maximumDate,
   neutralButtonLabel,
+  confirmTextAndroid,
+  cancelTextAndroid,
   minuteInterval,
   timeZoneOffsetInMinutes,
 }) {
@@ -46,6 +48,8 @@ function getPicker({
         minuteInterval,
         is24Hour,
         neutralButtonLabel,
+        confirmTextAndroid,
+        cancelTextAndroid,
         timeZoneOffsetInMinutes,
       });
     default:
@@ -55,6 +59,8 @@ function getPicker({
         minimumDate,
         maximumDate,
         neutralButtonLabel,
+        confirmTextAndroid,
+        cancelTextAndroid,
         timeZoneOffsetInMinutes,
       });
   }
@@ -82,6 +88,8 @@ export default function RNDateTimePicker(props: AndroidNativeProps) {
     minimumDate,
     maximumDate,
     neutralButtonLabel,
+    confirmTextAndroid,
+    cancelTextAndroid,
     minuteInterval,
     timeZoneOffsetInMinutes,
   } = props;
@@ -103,6 +111,8 @@ export default function RNDateTimePicker(props: AndroidNativeProps) {
         minimumDate,
         maximumDate,
         neutralButtonLabel,
+        confirmTextAndroid,
+        cancelTextAndroid,
         minuteInterval,
         timeZoneOffsetInMinutes,
       });

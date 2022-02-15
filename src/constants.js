@@ -48,4 +48,6 @@ export const TIME_SET_ACTION = 'timeSetAction';
 export const DISMISS_ACTION = 'dismissedAction';
 
 export const NEUTRAL_BUTTON_LABEL = 'neutralButtonLabel';
+export const CONFIRM_TEXT_ANDROID = 'confirmTextAndroid';
+export const CANCEL_TEXT_ANDROID = 'cancelTextAndroid';
 export const NEUTRAL_BUTTON_ACTION = 'neutralButtonAction';

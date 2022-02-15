@@ -103,6 +103,12 @@ public class RNDatePickerDialogFragment extends DialogFragment {
 
     DatePickerDialog dialog = getDialog(args, activityContext, onDateSetListener);
 
+    if (args != null && args.containsKey(RNConstants.ARG_BUTTON_CONFIRM_ANDROID)) {
+      dialog.setButton(DatePickerDialog.BUTTON_POSITIVE, args.getString(RNConstants.ARG_BUTTON_CONFIRM_ANDROID), dialog);
+    }
+    if (args != null && args.containsKey(RNConstants.ARG_BUTTON_CANCEL_ANDROID)) {
+      dialog.setButton(DatePickerDialog.BUTTON_NEGATIVE, args.getString(RNConstants.ARG_BUTTON_CANCEL_ANDROID), (OnClickListener)null);
+    }
     if (args != null && args.containsKey(RNConstants.ARG_NEUTRAL_BUTTON_LABEL)) {
       dialog.setButton(DialogInterface.BUTTON_NEUTRAL, args.getString(RNConstants.ARG_NEUTRAL_BUTTON_LABEL), mOnNeutralButtonActionListener);
     }

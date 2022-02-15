@@ -165,6 +165,12 @@ public class RNDatePickerDialogModule extends ReactContextBaseJavaModule {
     if (options.hasKey(RNConstants.ARG_MAXDATE) && !options.isNull(RNConstants.ARG_MAXDATE)) {
       args.putLong(RNConstants.ARG_MAXDATE, (long) options.getDouble(RNConstants.ARG_MAXDATE));
     }
+    if (options.hasKey(RNConstants.ARG_BUTTON_CONFIRM_ANDROID) && !options.isNull(RNConstants.ARG_BUTTON_CONFIRM_ANDROID)) {
+      args.putString(RNConstants.ARG_BUTTON_CONFIRM_ANDROID, options.getString(RNConstants.ARG_BUTTON_CONFIRM_ANDROID));
+    }
+    if (options.hasKey(RNConstants.ARG_BUTTON_CANCEL_ANDROID) && !options.isNull(RNConstants.ARG_BUTTON_CANCEL_ANDROID)) {
+      args.putString(RNConstants.ARG_BUTTON_CANCEL_ANDROID, options.getString(RNConstants.ARG_BUTTON_CANCEL_ANDROID));
+    }
     if (options.hasKey(RNConstants.ARG_DISPLAY) && !options.isNull(RNConstants.ARG_DISPLAY)) {
       args.putString(RNConstants.ARG_DISPLAY, options.getString(RNConstants.ARG_DISPLAY));
     }

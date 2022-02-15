@@ -133,6 +133,8 @@ export type AndroidNativeProps = Readonly<
       minuteInterval?: MinuteInterval;
 
       onChange?: (event: AndroidEvent, date?: Date) => void;
+      confirmTextAndroid?: string;
+      cancelTextAndroid?: string;
       neutralButtonLabel?: string;
     }
 >;
